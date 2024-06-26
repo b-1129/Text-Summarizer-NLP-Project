@@ -8,16 +8,16 @@ project_name = "textSummarizer"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
-    f"src/{project_name}/__init.py__",
-    f"src/{project_name}/components/__init.py__",
-    f"src/{project_name}/utils/__init.py__",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/utils/common.py",
-    f"src/{project_name}/logging/__init.py__",
-    f"src/{project_name}/config/__init.py__",
+    f"src/{project_name}/logging/__init__.py",
+    f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
-    f"src/{project_name}/pipeline/__init.py__",
-    f"src/{project_name}/entity/__init.py__",
-    f"src/{project_name}/constants/__init.py__",
+    f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/constants/__init__.py",
     "config/config.yaml",
     "params.yaml",
     "app.py",
@@ -40,7 +40,7 @@ for filepath in list_of_files:
         with open(filepath, 'w') as f:
             pass
             logging.info(f"Creating a empty file : {filepath}")
-
+    
     else:
         logging.info(f"{filename} is already exists")
 
