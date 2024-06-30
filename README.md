@@ -11,27 +11,41 @@
 7. Update the main.py
 8. Update the app.py
 
-How to run?
-STEPS:
-Clone the repository
+- How to run?
+- STEPS:
+- Clone the repository
 
 https://github.com/b-1129/Text-Summarizer-NLP-Project
+
 STEP 01- Create a conda environment after opening the repository
+
 conda create -n summary python=3.11 -y
+
 conda activate summary
+
 STEP 02- install the requirements
+
 pip install -r requirements.txt
+
 # Finally run the following command
 python app.py
+
 Now,
 
 open up you local host and port
+
 Author: Brijesh Kapadiya
+
 Data Science Student
+
 Email: brijesh29.it11@gmail.com
+
 AWS-CICD-Deployment-with-Github-Actions
+
 1. Login to AWS console.
+
 2. Create IAM user for deployment
+
 #with specific access
 
 1. EC2 access : It is virtual machine
@@ -56,10 +70,14 @@ AWS-CICD-Deployment-with-Github-Actions
 1. AmazonEC2ContainerRegistryFullAccess
 
 2. AmazonEC2FullAccess
+
 3. Create ECR repo to store/save docker image
 - Save the URI: 058264445982.dkr.ecr.ap-south-1.amazonaws.com/text-s
+
 4. Create EC2 machine (Ubuntu)
+
 5. Open EC2 and Install docker in EC2 Machine:
+
 #optinal
 
 sudo apt-get update -y
@@ -75,9 +93,12 @@ sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
 
 newgrp docker
+
 6. Configure EC2 as self-hosted runner:
 setting>actions>runner>new self hosted runner> choose os> then run command one by one
+
 7. Setup github secrets:
+
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
@@ -85,4 +106,5 @@ AWS_SECRET_ACCESS_KEY=
 AWS_REGION = ap-south-1
 
 AWS_ECR_LOGIN_URI = 058264445982.dkr.ecr.ap-south-1.amazonaws.com
+
 ECR_REPOSITORY_NAME = text-s
